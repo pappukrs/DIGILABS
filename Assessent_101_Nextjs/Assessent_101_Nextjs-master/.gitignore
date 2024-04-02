@@ -1,0 +1,20 @@
+# Ignore Next.js build output directory
+.next/
+
+# Ignore Node.js environment files
+.env*
+
+# Ignore development dependencies
+node_modules/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore yarn errors log
+yarn-error.log
+
+# Ignore production build
+out/

@@ -1,0 +1,79 @@
+.notificationicon-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%; 
+  }
+  
+  .notificationicon {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9E371F;
+  }
+  
+  .notificationicon img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: emit 3s forwards;
+  }
+  
+  /* @keyframes emit {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(10);
+      opacity: 0;
+    }
+  } */
+
+
+  @keyframes emit {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+      background-color:rgb(211,75,42)
+    }
+    /* 25% 
+    {
+      transform: scale(5); 
+      opacity: 1;
+      background-color: rgb(211,75,42);
+    }  */
+   
+    50% {
+      transform: scale(10); 
+      opacity: 1;
+      background-color: rgb(211,75,42);
+    }
+    75% {
+      transform: scale(5); 
+      opacity: 1;
+      background-color: rgb(187,121,11);
+
+    }
+    100% {
+      transform: scale(0); 
+      opacity: 0,3;
+      background-color: rgb(187,121,11);
+
+    }
+  }
+  
